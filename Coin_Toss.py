@@ -11,10 +11,10 @@ import math
 #             print ("Tails")
 # CoinToss()
 
-def CoinToss():
+def CoinToss(min, max):
     H = 0
     T = 0
-    for x in range(0,10):
+    for x in range(min,max):
         chance = round(random.random())
         if chance == 0:
             T += 1
@@ -23,5 +23,6 @@ def CoinToss():
             H += 1
             toss = "Heads"
         print("Tossing a coin... It's a {}! Got {} heads and {} tails thus far".format(toss, str(H), str(T)))
-    print ("After {} tosses you got {} heads and {} tails".format(str(x+1), str(H), str(T)))
+    print ("After {} tosses you got {} heads and {} tails".format(str(max-min), str(H), str(T)))
+#make sure to add in your wanted max and min values to get a more personalized experience
 CoinToss()
