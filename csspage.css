@@ -1,0 +1,15 @@
+.header{
+  color: blue;
+}
+
+.dog{
+  width: 100%;
+  height: auto;
+}
+
+body{
+  font-family: cursive;
+  width: 70%;
+  margin: 0 auto;
+  border: 2px pink dashed;
+}
